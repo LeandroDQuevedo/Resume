@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | Leandro Berwanger{% endblock %}
+
+{% block content %}
+
+<!-- =========== Hero Section =========== -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <p class="hero-intro">Hi, my name is</p>
+            <h1 class="hero-title">Leandro Berwanger.</h1>
+            <h2 class="hero-subtitle">I build things for the web.</h2>
+            <p class="hero-description">
+                I'm a developer specializing in creating modern, responsive, and user-friendly web applications. From backend logic to frontend design, I love bringing ideas to life.
+            </p>
+            <div class="hero-action">
+                <a href="#projects" class="btn-primary">
+                    View My Work <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========== About Section =========== -->
+<section id="about" class="content-section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Hello! My name is Leandro, and I am a developer based in Brazil with a deep passion for technology and problem-solving. My journey into programming started with a fascination for how software can shape our world, which led me to dive into web development.
+                </p>
+                <p>
+                    I specialize in both frontend and backend development, working with technologies like Python, Django, and JavaScript. I enjoy the challenge of building robust, scalable applications and crafting beautiful, intuitive user interfaces.
+                </p>
+            </div>
+            <div class="about-image">
+                <div class="image-frame">
+                    <div class="image-placeholder" style="background-image: url('https://placehold.co/400x400/112240/64ffda?text=Leandro');"></div>
+                    <div class="image-overlay"></div>
+                    <div class="image-border"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========== Skills Section =========== -->
+<section id="skills" class="content-section-colored">
+    <div class="container">
+        <h2 class="section-title">My Tech Stack</h2>
+        <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-python fa-3x"></i><p>Python</p></div>
+                    <div class="skill-card"><i class="fab fa-django fa-3x"></i><p>Django</p></div>
+                    <div class="skill-card"><i class="fab fa-js-square fa-3x"></i><p>JavaScript</p></div>
+                    <div class="skill-card"><i class="fab fa-html5 fa-3x"></i><p>HTML5</p></div>
+                    <div class="skill-card"><i class="fab fa-css3-alt fa-3x"></i><p>CSS3</p></div>
+                    <div class="skill-card"><i class="fab fa-bootstrap fa-3x"></i><p>TailwindCSS</p></div>
+                    <div class="skill-card"><i class="fas fa-database fa-3x"></i><p>PostgreSQL</p></div>
+                    <div class="skill-card"><i class="fab fa-git-alt fa-3x"></i><p>Git</p></div>
+                    <div class="skill-card"><i class="fab fa-github fa-3x"></i><p>GitHub</p></div>
+                    <div class="skill-card"><i class="fab fa-docker fa-3x"></i><p>Docker</p></div>
+                    <div class="skill-card"><i class="fab fa-figma fa-3x"></i><p>Figma</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- =========== Projects Section =========== -->
+<section id="projects" class="content-section">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-card-content">
+                    <div class="project-card-header">
+                        <i class="fas fa-folder-open project-icon"></i>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github fa-lg"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title"><a href="#">Portfolio Website</a></h3>
+                    <p class="project-description">A professional portfolio built with Django to showcase my projects and skills in a clean, modern design.</p>
+                </div>
+                <div class="project-card-footer">
+                    <ul class="project-tags">
+                        <li>Django</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add more project cards here -->
+        </div>
+    </div>
+</section>
+
+<!-- =========== Contact Section =========== -->
+<section id="contact" class="content-section text-center">
+    <div class="container-narrow">
+        <h2 class="contact-intro">What's Next?</h2>
+        <h3 class="contact-title">Get In Touch</h3>
+        <p class="contact-description">
+            I'm currently open to new opportunities. Whether you have a question or just want to say hi, my inbox is always open. I'll get back to you as soon as I can!
+        </p>
+        <form id="contact-form" class="contact-form" novalidate>
+            <div id="form-message" class="form-message"></div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Your Message" class="form-input" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn-primary w-full sm:w-auto">Send Message</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}
